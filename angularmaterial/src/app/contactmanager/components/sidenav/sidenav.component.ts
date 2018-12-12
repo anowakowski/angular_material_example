@@ -3,7 +3,7 @@ import { UserService } from '../../services/user.service';
 import { Observable } from 'rxjs';
 import { User } from '../../models/user';
 import { Router } from '@angular/router';
-import { MatSidenav } from '@angular/material';
+import { MatSidenav, MatDrawer } from '@angular/material';
 
 const SMALL_WIDTH_BREAKPOINT = 720;
 
@@ -27,7 +27,7 @@ export class SidenavComponent implements OnInit {
       // zone.run(() => this.mediaMatcher = mql));
   }
 
-  @ViewChild(MatSidenav) sidenav: MatSidenav;
+  @ViewChild(MatDrawer) drawer: MatDrawer;
 
   ngOnInit() {
     this.users = this.userService.users;
@@ -35,7 +35,7 @@ export class SidenavComponent implements OnInit {
 
     this.router.events.subscribe(() => {
       if (this.isScreenSmall()) {
-        this.sidenav.close();
+        this.drawer.close();
       }
     });
   }
