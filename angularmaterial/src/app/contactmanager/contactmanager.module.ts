@@ -14,14 +14,13 @@ import { HttpClientModule } from '@angular/common/http';
 
 
 const routes: Routes = [
-  {path: '', component: ContactmanagerAppComponent,
+  { path: '', component: ContactmanagerAppComponent,
     children: [
       { path: ':id', component: MainContentComponent },
       { path: '', component: MainContentComponent }
-    ]},
-  {path: '**', redirectTo: '' }
+    ] },
+  { path: '**', redirectTo: '' }
 ];
-
 
 @NgModule({
   declarations: [ContactmanagerAppComponent, ToolbarComponent, MainContentComponent, SidenavComponent],

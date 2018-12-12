@@ -13,7 +13,9 @@ export class MainContentComponent implements OnInit {
   user: User;
   constructor(
     private route: ActivatedRoute,
-    private userService: UserService) { }
+    private userService: UserService) {
+      this.userService.loadAll();
+     }
 
   ngOnInit() {
     this.route.params.subscribe(params => {
