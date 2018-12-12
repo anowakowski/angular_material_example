@@ -5,8 +5,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {Routes, RouterModule} from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { MaterialModule } from './shared/material/material.module';
-import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {path: 'demo', loadChildren: '../app/demo/demo.module#DemoModule' },
@@ -20,8 +18,6 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule,
-    FormsModule,
     RouterModule.forRoot(routes)
 
   ],
