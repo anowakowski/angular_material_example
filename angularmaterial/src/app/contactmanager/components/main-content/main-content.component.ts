@@ -23,11 +23,15 @@ export class MainContentComponent implements OnInit {
       if (!id) {
         id = 1;
       }
+      this.user = null;
 
       this.userService.users.subscribe(users => {
         if (users.length === 0) {
           return;
         }
+        // setTimeout(() => {
+        //   this.user = this.userService.userById(id);
+        // }, 500);
         this.user = this.userService.userById(id);
       });
     });
