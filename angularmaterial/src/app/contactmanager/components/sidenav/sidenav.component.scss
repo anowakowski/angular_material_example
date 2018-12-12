@@ -8,10 +8,9 @@
 .app-sidenav-content {
   display: flex;
   height: 100%;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 
-.mat-drawer {
-  width: 440px;
+mat-drawer {
+  width: 240px;
 }
