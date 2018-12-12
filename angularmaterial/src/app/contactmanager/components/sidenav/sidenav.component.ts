@@ -9,6 +9,8 @@ export class SidenavComponent implements OnInit {
 
   constructor() { }
 
+  showFiller = false;
+
   ngOnInit() {
   }
 
