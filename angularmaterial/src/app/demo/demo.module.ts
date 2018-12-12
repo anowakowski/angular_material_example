@@ -5,9 +5,10 @@ import { FormsModule } from '@angular/forms';
 import { DemoRoutingModule } from './demo-routing.module';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { MaterialModule } from '../shared/material/material.module';
+import { FlexboxComponent } from './flexbox/flexbox.component';
 
 @NgModule({
-  declarations: [ButtonsComponent],
+  declarations: [ButtonsComponent, FlexboxComponent],
   imports: [
     CommonModule,
     DemoRoutingModule,
