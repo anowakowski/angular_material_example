@@ -1,7 +1,10 @@
 $iconWidth: 56px;
 
+.example-spacer {
+  flex: 1 1 auto;
+}
 .sidenav-toggle {
-  //display: none;
+  display: flex;
   padding: 0;
   margin: 8px;
   min-width: $iconWidth;
@@ -19,4 +22,5 @@ $iconWidth: 56px;
     line-height: $iconWidth;
     color: white;
   }
+
 }
